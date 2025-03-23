@@ -64,6 +64,10 @@
           ""
         ],
         [
+          "lib_footprint_mismatch|116900000|92500000|1aca6d2c-8d50-471d-872b-4848ce9db402|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
           "lib_footprint_mismatch|119620000|89300000|a1de3738-e204-4092-820f-8322208cbfb2|00000000-0000-0000-0000-000000000000",
           ""
         ]
@@ -477,7 +481,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "BoxTurtleMC1.kicad_pro",
+    "filename": "BoxTurtleMC.kicad_pro",
     "version": 3
   },
   "net_settings": {
