@@ -12,7 +12,7 @@ The main focus is combining this project with a BigTreeTech MMB this to enable f
 
 Download the latest zip files from the gerber folder. This file can then be submitted to one of the PCB manufactures online like [PCBWay.com](https://www.pcbway.com/) or [JLCPcb](https://jlcpcb.com/). Orders are usually a minimum of 5 PCBs per order and should be around $30 USD including shipping.
 
-Ideally those who go through the process to make circuit boards will make their extras available to others at a minimum cost. 
+Ideally those who go through the process to make circuit boards will make their extra boards available to others at a minimum cost. 
 
 # BOM
 All parts are available on Amazon with the exception of the 2 CANBUS plus.
