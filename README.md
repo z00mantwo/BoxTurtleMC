@@ -13,7 +13,21 @@ Download the latest zip files from the
 
 # BOM
 
-- PCB
-- Raspberry Pi Pico or Pico2
-- DRV8833 DC motor drivers. 1 to 4 as needed. Each provides control for 2 motors each
-- 
+- 1 PCB
+- 1 Raspberry Pi Pico or Pico2
+- 1-4 DRV8833 DC motor driver modules. 
+	1 to 4 as needed. Each provides control for 2 motors each.
+- 1 MP1583 power module
+- 1 CJMCU-1051 module for CANBUS connectivity
+- Socket connectors are optional, but strongly suggested.
+	+ 2 2.54mm 20 pin socket connectors for Pi Pico
+	+ 1 2.54mm 8 pin socket connectors for CJMCU-1051
+	+ 2 2.54mm 6 pin socket connectors for each DRV8833 module.
+	+ 2 Molex ???? connectors. 
+	+ 2 or more 
+	
+
+# Tools Needed
+- Basic experience soldering components
+- Soldering iron with fine tip
+- Good solder. 
