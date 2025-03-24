@@ -30,9 +30,11 @@ Those are available at [DigiKey.com](https://DigiKey.com).
 - 2 [Molex Micro-Fit 3.0 43045](https://www.digikey.com/en/products/detail/molex/0430450414/252509) connector header. Available from DigiKey.com.
 - 2 or more [JST XH 2.54mm 2-pin female sockets](https://www.amazon.com/s?k=JST-XH+2.54mm+2pin+female+sockets). This depends on what parts of the board you will make use of.
 
-The following 2 items are only needed if this board will last device in a CANBUS chain.
+The following 2 items are only needed if this board will be the last device in a CANBUS chain. 
 - 1 through hole 120 Ohm axial resister. 
 - 1 2pin [2.54mm Pitch Single Row Pin Header](https://www.amazon.com/s?k=2.54mm+Pitch+Single+Row+Pin+Header). A jumper will also be needed for this pin header. 
+
+If you need to terminate this board use the CAN2 connector for the incoming CANBUS connection. Do not use the CAN1 connection when terminated. 
 
 Note when ordering the Molex Micro-Fit 3.0 connector header you may also want to order some [Molex Micro-Fit 3.0 plugs](https://www.digikey.com/en/products/detail/molex/0430250408/4481508) along with the appropriate pins [Molex 0430300007](https://www.digikey.com/en/products/detail/molex/0430300007/252479). Since DigiKey allows ordering in specified quantities as low as 1 this may also be a good place to source the needed diode and optional resister.
 
