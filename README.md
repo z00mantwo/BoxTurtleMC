@@ -23,8 +23,8 @@ Those are available at [DigiKey.com](https://DigiKey.com).
 - 1 PCB.
 - 1 Raspberry Pi Pico or Pico2.
 - 1 [1N5817 Diode](https://www.amazon.com/s?k=1N5817+Diode). Required.
-- 1 [MP1583EN DC-DC buck converter](https://www.amazon.com/s?k=MP1583EN+dc-dc+5v+buck+converter). A fixed 5V module is STRONGLY suggested to avoid issues adjusting a variable voltage version.
-- 1 [CJMCU-1051](https://www.amazon.com/s?k=CJMCU-1051) module for CANBUS connectivity.
+- 1 [MP1583EN DC-DC buck converter](https://www.amazon.com/s?k=MP1583EN+dc-dc+5v+buck+converter). Required. A fixed 5V module is STRONGLY suggested to avoid issues adjusting a variable voltage version.
+- 1 [CJMCU-1051](https://www.amazon.com/s?k=CJMCU-1051) module for CANBUS connectivity. Required.
 - 1-4 [DRV8833 DC Motor Driver Controller Board 1.5A Dual H Bridge](https://www.amazon.com/s?k=DRV8833+DC+Motor+Driver+Controller+Board+3A+Dual+H+Bridge) modules.
 	1 to 4 as needed. Each provides control for 2 motors each. So if you want to control 4 lanes you will need 2 DRV8833 modules. 
 - [2.54mm female pin headers](https://www.amazon.com/s?k=2.54mm+Female+Pin+Header) are optional, but strongly suggested. This allows swapping out components if there is an issue.
