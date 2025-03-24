@@ -12,7 +12,7 @@ Note there is a mount for the board in the stl folder.
 ## Making a PCB
 ![BT_Render](images/PCB_Editor.png) 
 
-Download the latest zip files from the gerber folder. This file can then be submitted to one of the PCB manufactures online like [PCBWay.com](https://www.pcbway.com/) or [JLCPcb.com](https://jlcpcb.com/). Orders are usually a minimum of 5 PCBs per order and should be around $30 USD for 5 boards including shipping.
+Download the latest zip files from the gerber folder. This file can then be submitted to one of the PCB manufactures online like [PCBWay.com](https://www.pcbway.com/) or [JLCPcb.com](https://jlcpcb.com/). Orders are usually a minimum of 5 PCBs per order and should be around $30 USD for 5 boards including shipping. If this is your first time doing this there are often first time customer discounts that can push the cost below $20 including shipping.
 
 Ideally those who go through the process to make circuit boards will make their extra boards available to others at a minimum cost. 
 
@@ -23,10 +23,10 @@ Those are available at [DigiKey.com](https://DigiKey.com).
 - 1 PCB.
 - 1 Raspberry Pi Pico or Pico2.
 - 1 [1N5817 Diode](https://www.amazon.com/s?k=1N5817+Diode). Required.
-- 1-4 [DRV8833 DC Motor Driver Controller Board 1.5A Dual H Bridge](https://www.amazon.com/s?k=DRV8833+DC+Motor+Driver+Controller+Board+3A+Dual+H+Bridge) modules.
-	1 to 4 as needed. Each provides control for 2 motors each. So if you want to control 4 lanes you will need 2 DRV8833 modules. 
 - 1 [MP1583EN DC-DC buck converter](https://www.amazon.com/s?k=MP1583EN+dc-dc+5v+buck+converter). A fixed 5V module is STRONGLY suggested to avoid issues adjusting a variable voltage version.
 - 1 [CJMCU-1051](https://www.amazon.com/s?k=CJMCU-1051) module for CANBUS connectivity.
+- 1-4 [DRV8833 DC Motor Driver Controller Board 1.5A Dual H Bridge](https://www.amazon.com/s?k=DRV8833+DC+Motor+Driver+Controller+Board+3A+Dual+H+Bridge) modules.
+	1 to 4 as needed. Each provides control for 2 motors each. So if you want to control 4 lanes you will need 2 DRV8833 modules. 
 - [2.54mm female pin headers](https://www.amazon.com/s?k=2.54mm+Female+Pin+Header) are optional, but strongly suggested. This allows swapping out components if there is an issue.
 	+ 2 2.54mm 20 pin socket connectors for Pi Pico
 	+ 1 2.54mm 8 pin socket connectors for CJMCU-1051
@@ -57,7 +57,7 @@ Next solder on the socket connectors as needed. It is recommended to socket the 
 
 CANBUS terminator if needed.
 
-## Katapult and Klipper configuration
+## Flashing Katapult and Klipper
 
 CANBUS needs to already setup on your printer. The [Esoterical’s guide](https://canbus.esoterical.online/) is a great resource.
 
@@ -128,6 +128,10 @@ cd ~/katapult/scripts && python3 flashtool.py -i can0 -f ~/klipper/out/klipper.b
 ```
 
 If all is well the Pico will reboot and there should be a green light on the Pi Pico and a red light on each DRV8833. If the Pico light does not come on power off and back on. If it still does not come on something went wrong along the way. 
+
+## Katapult and Klipper configuration
+
+
 
 ## Options
 - Only purchasing the components you need. All locations on the board do not need to be populated. You can choose and select the ones you want to populate based on your intended usage.
