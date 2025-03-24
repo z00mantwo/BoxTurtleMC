@@ -129,9 +129,39 @@ cd ~/katapult/scripts && python3 flashtool.py -i can0 -f ~/klipper/out/klipper.b
 
 If all is well the Pico will reboot and there should be a green light on the Pi Pico and a red light on each DRV8833. If the Pico light does not come on power off and back on. If it still does not come on something went wrong along the way. 
 
-## Katapult and Klipper configuration
+## Klipper configuration
 
+Copy the `MC_1.cfg` in the klipper folder to your klipper configurations folder. 
 
+Then add
+
+```
+[include MC_1.cfg]
+```
+
+to your `printer.cfg`. Make sure this is before you load the [AFC-Klipper-Add-On](https://github.com/ArmoredTurtle/AFC-Klipper-Add-On/tree/main) cfg files. 
+
+Note that with the DRV8833 modules one line controls the SLEEP/ENABLE option for 2 motors. So rather than a MOT1_EN alias the BoxTurtleMC has a MOT12_EN alias that is the ENABLE function for both motor 1 and motor 2.
+
+This then requires setting a `[duplicate_pin_override]` section in your klipper configuration. See the example near the end of the `MC_1.cfg` file for an example. Note that if you don't have a `[duplicate_pin_override]` section in your current configuration you can uncomment the section in the `MC_1.cfg` file.
+
+You will then need to change the "afc_motor" entries in your `AFC/AFC_Turtle_1.cfg` file for each lane that you want the re-spooler motors controlled by the BoxTurtleMC. For example change
+
+```
+afc_motor_rwd: Turtle_1:MOT1_RWD
+afc_motor_fwd: Turtle_1:MOT1_FWD
+afc_motor_enb: Turtle_1:MOT1_EN
+```
+
+to
+
+```
+afc_motor_rwd: MC_1:MOT1_RWD
+afc_motor_fwd: MC_1:MOT1_FWD
+afc_motor_enb: MC_1:MOT12_EN
+```
+
+You will need to do this for each lane that you want the BoxTurtleMC to control the DC motor in the re-spooler. 
 
 ## Options
 - Only purchasing the components you need. All locations on the board do not need to be populated. You can choose and select the ones you want to populate based on your intended usage.
