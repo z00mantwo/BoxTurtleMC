@@ -49,11 +49,9 @@ Note when ordering the Molex Micro-Fit 3.0 connector header you may also want to
 
 Solder on the 2 CANBUS plugs and the MP1583EN module. It is recommended that the MP1583EN be soldered to the board and not socketed. If you didn't get a fixed 5V MP1583EN then make sure to set it to 5V. You can do this by connecting the board to a CANBUS connection and adjusting the potentiometer on the MP1583EN while monitoring the output voltage via the 5V connector with a multi meter. Note a fixed 5V MP1583EN is suggested to bypass this step and avoid issues.
 
-Solder in the diode. Note if you are soldering the Pico to the board (not recommended) the diode will need to be installed on the back of the circuit board.
+Solder in the 1N5817 diode. Note if you are soldering the Pico to the board (not recommended) the diode will need to be installed on the back of the circuit board.
 
 Next solder on the socket connectors as needed. It is recommended to socket the Pico and the DRV8833 modules. The DRV8833 modules are sensitive to static shock. 
-
-Solder on the 1N5817 diode. If you are not using socket connectors for the Pi Pico you can place the diode on the back of the  board. 
 
 CANBUS terminator if needed.
 
