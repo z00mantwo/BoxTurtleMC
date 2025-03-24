@@ -7,6 +7,8 @@ The main focus is combining this project with a BigTreeTech MMB. This to enable 
 
 The board was developed in the free version of [KiCAD](https://www.kicad.org/). So it can be downloaded and modified.
 
+Note there is a mount for the board in the stl folder.
+
 ## Making a PCB
 ![BT_Render](images/PCB_Editor.png) 
 
