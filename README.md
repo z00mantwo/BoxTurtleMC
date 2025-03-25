@@ -141,7 +141,7 @@ Then add
 
 to your `printer.cfg`. Make sure this is before you load the [AFC-Klipper-Add-On](https://github.com/ArmoredTurtle/AFC-Klipper-Add-On/tree/main) cfg files. 
 
-Note that with the DRV8833 modules one line controls the SLEEP/ENABLE option for 2 motors. So rather than a MOT1_EN alias the BoxTurtleMC has a MOT12_EN alias that is the ENABLE function for both motor 1 and motor 2.
+Note that with the DRV8833 modules use one line controls the SLEEP/ENABLE option for 2 motors. So rather than a MOT1_EN alias the BoxTurtleMC has a MOT12_EN alias that is the ENABLE function for both motor 1 and motor 2.
 
 This then requires setting a `[duplicate_pin_override]` section in your klipper configuration. See the example near the end of the `MC_1.cfg` file for an example. Note that if you don't have a `[duplicate_pin_override]` section in your current configuration you can uncomment the section in the `MC_1.cfg` file.
 
