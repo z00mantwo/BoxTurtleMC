@@ -3,7 +3,7 @@ This is a self sourced DC motor controller for use with [Klipper](https://github
 
 ![BT_Render](images/MC-Render.png)
 
-The main focus is combining this project with a BigTreeTech MMB. This to enable full BoxTurtle control of the DC motor powered re-spoolers. It also adds additional support for the "BoxTurtle Lane Controls" mod and [Project TurtleScreen](https://github.com/sbtoonz/TurtleScreen). This board will also have the option of controlling up to 8 re-spooler motors so it should be useful in larger custom BoxTurtle setups with more than 4 lanes. 
+The main focus is combining this project with a [BigTreeTech MMB](https://biqu.equipment/products/bigtreetech-mmb). This to enable full BoxTurtle control of the DC motor powered re-spoolers. It also allows a nice upgrade path from a ERCF to the BoxTurtle. the board also adds additional support for the "BoxTurtle Lane Controls" mod and [Project TurtleScreen](https://github.com/sbtoonz/TurtleScreen). This board will also have the option of controlling up to 8 re-spooler motors so it should be useful in larger custom BoxTurtle setups with more than 4 lanes. 
 
 The board was developed in the free version of [KiCAD](https://www.kicad.org/). So it can be downloaded and modified.
 
@@ -53,7 +53,7 @@ Solder on the 2 CANBUS plugs and the MP1583EN module. It is recommended that the
 
 Solder in the 1N5817 diode. Note if you are soldering the Pico to the board (not recommended) the diode will need to be installed on the back of the circuit board.
 
-Next solder on the socket connectors as needed. It is recommended to socket the Pico and the DRV8833 modules. The DRV8833 modules are sensitive to static shock. 
+Next solder on the socket connectors as needed. It is recommended to socket the Pico and the DRV8833 modules. The DRV8833 modules are sensitive to static shock. So this makes them easy to replace if needed. 
 
 CANBUS terminator if needed.
 
