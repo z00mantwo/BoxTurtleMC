@@ -171,6 +171,7 @@ You will need to do this for each lane that you want the BoxTurtleMC to control 
 - Using USB rather than CANBUS. Theoretically this board could be used by klipper through the USB connector on the Pi Pico. This would require changing the katapult and klipper configurations. the XXX could then be excluded, but the board would still need external power for the DRV8833. So it's only recommended for experienced klipper users. 
 
 ## Early release 1.0 boards
-Note the 1.0 board does have a known issue. The CANL and CANH pins are reversed. Still works, but where katapult and klipper want to use pins 4 and 5 as defaults you have to switch them to 5 then 4. Version 1.1 board fixes this. 
+Note the 1.0 board does have a known issue. The CANL and CANH pins are reversed. Still works, but where katapult and klipper want to use pins 4 and 5 as defaults you have to switch them to 5 then 4. Version 1.1 board fixes this. See the screenshots in the "Flashing Katapult and Klipper" section above.
 
 ![BT_Render](images/PXL_20250323_015415830.jpg) 
+
