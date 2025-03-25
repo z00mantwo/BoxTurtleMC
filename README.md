@@ -3,7 +3,7 @@ This is a self sourced DC motor controller for use with [Klipper](https://github
 
 ![BT_Render](images/MC-Render.png)
 
-The main focus is combining this project with a [BigTreeTech MMB](https://biqu.equipment/products/bigtreetech-mmb). This will enable full BoxTurtle control of the DC motor powered re-spoolers. It also allows a nice upgrade path from a ERCF to the BoxTurtle. It also includes additional support for the "BoxTurtle Lane Controls" mod and [Project TurtleScreen](https://github.com/sbtoonz/TurtleScreen). This board will also have the option of controlling up to 8 re-spooler motors so it should be useful in larger custom BoxTurtle setups with more than 4 lanes. 
+The main focus is combining this project with a [BigTreeTech MMB](https://biqu.equipment/products/bigtreetech-mmb). This will enable full BoxTurtle control of the DC motor powered re-spoolers. It also allows a nice upgrade path from a ERCF to the BoxTurtle. It includes additional support for the "BoxTurtle Lane Controls" mod and [Project TurtleScreen](https://github.com/sbtoonz/TurtleScreen). This board will also have the option of controlling up to 8 re-spooler motors so it should be useful in larger custom BoxTurtle setups with more than 4 lanes. 
 
 The board was developed in the free version of [KiCAD](https://www.kicad.org/). So it can be downloaded and modified.
 
