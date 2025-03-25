@@ -12,7 +12,7 @@ Note there is a mount for the board in the stl folder.
 ## Making a PCB
 ![BT_Render](images/PCB_Editor.png) 
 
-Download the latest zip files from the gerber folder. This file can then be submitted to one of the PCB manufactures online like [PCBWay.com](https://www.pcbway.com/) or [JLCPcb.com](https://jlcpcb.com/). Orders are usually a minimum of 5 PCBs per order and should be around $30 USD for 5 boards including shipping. If this is your first time doing this there are often first time customer discounts that can push the cost below $20 including shipping.
+Download the latest zip files from the gerber folder. This file can then be submitted to one of the PCB manufactures online like [PCBWay.com](https://www.pcbway.com/), [HQ NextPCB](https://www.nextpcb.com/), [ALLPCB](https://www.allpcb.com/) or [JLCPcb.com](https://jlcpcb.com/). Orders are usually a minimum of 5 PCBs per order and should be around $30 USD for 5 boards including shipping. If this is your first time doing this there are often "first time customer" discounts that can push the cost below $20 including shipping. I suggest shopping around to find the best deal. 
 
 Ideally those who go through the process to make circuit boards will make their extra boards available to others at a minimum cost. 
 
