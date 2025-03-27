@@ -145,6 +145,15 @@ Note that with the DRV8833 modules use one line controls the SLEEP/ENABLE option
 
 This then requires setting a `[duplicate_pin_override]` section in your klipper configuration. See the example near the end of the `MC_1.cfg` file for an example. Note that if you don't have a `[duplicate_pin_override]` section in your current configuration you can uncomment the section in the `MC_1.cfg` file.
 
+If you are combining the BoxTurtleMC with BTT MMB you will need to edit the AFC/mcu/MMB_1.0.cfg or MMB_1.0.cfg and remove or comment out the MOT lines by placing a # in front of each line.
+
+```
+	#MOT1_RWD=PA0	, 
+	#MOT2_RWD=PA1	, 
+	#MOT3_RWD=PB10	, 
+	#MOT4_RWD=PB2	,
+```
+
 You will then need to change the "afc_motor" entries in your `AFC/AFC_Turtle_1.cfg` file for each lane that you want the re-spooler motors controlled by the BoxTurtleMC. For example change
 
 ```
