@@ -40,7 +40,7 @@ The following 2 items are only needed if this board will be the last device in a
 
 If you need to terminate this board use the CAN2 connector for the incoming CANBUS connection. Do not use the CAN1 connection when terminated. 
 
-Note when ordering the Molex Micro-Fit 3.0 connector header you may also want to order some [Molex Micro-Fit 3.0 plugs](https://www.digikey.com/en/products/detail/molex/0430250408/4481508) along with the appropriate pins [Molex 0430300007](https://www.digikey.com/en/products/detail/molex/0430300007/252479). Since DigiKey allows ordering in specified quantities as low as 1 this may also be a good place to source the needed diode and optional resister.
+Note when ordering the Molex Micro-Fit 3.0 connector headers you may also want to order some [Molex Micro-Fit 3.0 plugs](https://www.digikey.com/en/products/detail/molex/0430250408/4481508) along with the appropriate pins [Molex 0430300007](https://www.digikey.com/en/products/detail/molex/0430300007/252479). Since DigiKey allows ordering in specified quantities as low as 1 this may also be a good place to source the needed diode and optional resister.
 
 ## Tools Needed
 - Basic experience soldering components
