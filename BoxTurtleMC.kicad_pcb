@@ -15417,7 +15417,7 @@
 	)
 	(gr_line
 		(start 181.1143 93.275)
-		(end 181.1143 83.4)
+		(end 181.1 83)
 		(stroke
 			(width 0.2)
 			(type default)
@@ -19299,20 +19299,20 @@
 		(uuid "d1164881-c1b0-45c5-a4a9-70698ac3565a")
 	)
 	(segment
-		(start 179.3393 83)
-		(end 177.8643 81.525)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 52)
-		(uuid "56127c1a-c31b-446f-9bac-660a1427af5a")
-	)
-	(segment
 		(start 181.1143 83)
 		(end 179.3393 83)
 		(width 0.2)
 		(layer "F.Cu")
 		(net 52)
-		(uuid "5ad800b7-f89e-4968-b122-d673819e9528")
+		(uuid "996ddbd7-a961-48f6-a067-c7b83be6c5f7")
+	)
+	(segment
+		(start 179.3393 83)
+		(end 177.8643 81.525)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 52)
+		(uuid "b7b4cf31-fc3d-43f6-af54-c16fe2c11286")
 	)
 	(segment
 		(start 177.8643 81.525)
@@ -19320,7 +19320,7 @@
 		(width 0.2)
 		(layer "F.Cu")
 		(net 52)
-		(uuid "f4c0e93c-c3c5-4d9e-9f3a-05aac8f6c5cd")
+		(uuid "ce944dd5-5ebc-4a69-bd61-d8b44d8de987")
 	)
 	(via
 		(at 181.1143 83)
