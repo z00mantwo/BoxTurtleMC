@@ -173,7 +173,7 @@ afc_motor_enb: MC_1:MOT12_EN
 You will need to do this for each lane that you want the BoxTurtleMC to control the DC motor in the re-spooler. 
 
 ## Options
-- Only purchasing the components you need. All locations on the board do not need to be populated. You can choose and select the ones you want to populate based on your intended usage.
+- Only purchasing the components you need. All locations on the board do not need to be populated. You can choose and select the ones you want to populate based on your intended usage. Below is a board setup to only use motors 1-4.
 
 ![BT_Render](images/PXL_20250323_005901771.jpg)
 
