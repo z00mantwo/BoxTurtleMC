@@ -172,6 +172,8 @@ afc_motor_enb: MC_1:MOT12_EN
 
 You will need to do this for each lane that you want the BoxTurtleMC to control the DC motor in the re-spooler. 
 
+Use the [AFC Klipper Add-on](https://github.com/ArmoredTurtle/AFC-Klipper-Add-On/)'s "TEST lane=lane1" to check motor control is setup properly. 
+
 ## Options
 - Only purchasing the components you need. All locations on the board do not need to be populated. You can choose and select the ones you want to populate based on your intended usage. Below is a board setup to only use motors 1-4.
 
