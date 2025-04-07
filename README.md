@@ -172,12 +172,18 @@ afc_motor_enb: MC_1:MOT12_EN
 
 You will need to do this for each lane that you want the BoxTurtleMC to control the DC motor in the re-spooler. 
 
+Use the [AFC Klipper Add-on](https://github.com/ArmoredTurtle/AFC-Klipper-Add-On/)'s "TEST lane=lane1" to check motor control is setup properly. 
+
 ## Options
 - Only purchasing the components you need. All locations on the board do not need to be populated. You can choose and select the ones you want to populate based on your intended usage. Below is a board setup to only use motors 1-4.
 
 ![BT_Render](images/PXL_20250323_005901771.jpg)
 
 - Using USB rather than CANBUS. Theoretically this board could be used by klipper through the USB connector on the Pi Pico. The CJMCU-1051 could then be excluded, but the board would still need external power for the DRV8833s. This would require changing the katapult and klipper configurations. So it's only recommended for experienced klipper users. 
+
+- A question was asked about using a cheap Ender 3 SKR MCU with this board. Most of those boards only have 4 switches (X, Y, Z limit plus filament detection) and 11 switches are needed for the BoxTurtle. The board already has 6 switches but was missing one additional switch to give the needed 11 switches. Two pins from the DRV3 socket can be used for an additional switch. GND and IN3. See the image below. This would make GPIO12 switch #7 on the board. NOTE THIS HAS NOT BEEN TESTED, but should work.
+
+![BT_Render](images/SW7.png)
 
 ## Early release 1.0 boards
 Note the 1.0 board does have a known issue. The CANL and CANH pins are reversed. Still works, but where katapult and klipper want to use pins 4 and 5 as defaults you have to switch them to 5 then 4. Version 1.1 board fixes this. See the screenshots in the "Flashing Katapult and Klipper" section above.
