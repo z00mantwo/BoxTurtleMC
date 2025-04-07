@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # BoxTurtleMC: BoxTurtle Motor Controller
 This is a self sourced DC motor controller for use with [Klipper](https://github.com/ArmoredTurtle/BoxTurtleg) and the  [BoxTurtle](https://klipper3d.org) project. This is not an official [Armored Turtle](https://github.com/ArmoredTurtle) project.
 
@@ -379,5 +379,3 @@ Use the [AFC Klipper Add-on](https://github.com/ArmoredTurtle/AFC-Klipper-Add-On
 Note the 1.0 board does have a known issue. The CANL and CANH pins are reversed. Still works, but where katapult and klipper want to use pins 4 and 5 as defaults you have to switch them to 5 then 4. Version 1.1 board fixes this. See the screenshots in the "Flashing Katapult and Klipper" section above.
 
 ![BT_Render](images/PXL_20250323_015415830.jpg) 
-
->>>>>>> cff0ac98cdb5128204b68c8e926740a0bbe763d7
