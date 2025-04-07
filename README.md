@@ -373,6 +373,10 @@ Use the [AFC Klipper Add-on](https://github.com/ArmoredTurtle/AFC-Klipper-Add-On
 
 ![BT_Render](images/PXL_20250323_005901771.jpg)
 
+- A question was asked about using this board with a cheap Ender 3 SKR board. Most of the SKR boards only have 4 switches. X, Y, Z limit switches and a filament detection switch. When combined with this board's 6 switches that would only be 10 switches and 11 are needed for a 4 lane BoxTurtle. The DRV3 socket can be used to add a 7th switch as shown below. Make sure to orient the socket as shown. This would make the 7th switch GPIO12. NOTE THIS HAS NOT BEEN TESTED, but should work.
+
+![BT_Render](images/SW7.png)
+
 - Using USB rather than CANBUS. Theoretically this board could be used by klipper through the USB connector on the Pi Pico. The CJMCU-1051 could then be excluded, but the board would still need external power for the DRV8833s. This would require changing the katapult and klipper configurations. So it's only recommended for experienced klipper users. 
 
 ## Early release 1.0 boards
