@@ -251,7 +251,7 @@ Next solder on the socket connectors as needed. It is recommended to socket the 
 
 CANBUS terminator if needed.
 
-## Flashing Katapult and Klipper
+## CANBUS: Flashing Katapult and Klipper
 
 CANBUS needs to already setup on your printer. The [Esoterical’s guide](https://canbus.esoterical.online/) is a great resource.
 
@@ -377,7 +377,9 @@ Use the [AFC Klipper Add-on](https://github.com/ArmoredTurtle/AFC-Klipper-Add-On
 
 ![BT_Render](images/SW7.png)
 
-- Using USB rather than CANBUS. Theoretically this board could be used by klipper through the USB connector on the Pi Pico. The CJMCU-1051 could then be excluded, but the board would still need external power for the DRV8833s. This would require changing the katapult and klipper configurations. So it's only recommended for experienced klipper users. 
+- Using USB rather than CANBUS. This board could be used by klipper through the USB connector on the Pi Pico. The CJMCU-1051 could then be excluded, but the board would still need external 24V power for the DRV8833s. This can be connected via the CANBUS connector. This will require install just klipper (no katapult) as configured below. So it's only recommended for experienced klipper users. 
+
+![BT_Render](images/klipper-USBSERIAL.png)
 
 ## Early release 1.0 boards
 Note the 1.0 board does have a known issue. The CANL and CANH pins are reversed. Still works, but where katapult and klipper want to use pins 4 and 5 as defaults you have to switch them to 5 then 4. Version 1.1 board fixes this. See the screenshots in the "Flashing Katapult and Klipper" section above.
