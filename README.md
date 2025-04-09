@@ -24,13 +24,13 @@ Those are available at [DigiKey.com](https://DigiKey.com).
 | Item | Quantity | Notes | Links |
 | :--- | :---: |:--- | :--- |
 PCB | 1 | Required. See "Making a PCB" section | 
-Raspberry Pi Pico or Pico2 | 1 | Required. "W"ireless version is not needed, but will work. | [Amazon](https://www.amazon.com/s?k=Raspberry+Pi+Pico)
+Raspberry Pi Pico or Pico 2 | 1 | Required. "W"ireless version is not needed, but will work. | [Amazon](https://www.amazon.com/s?k=Raspberry+Pi+Pico)
 1N5817 Diode | 1 | Required. |[Amazon](https://www.amazon.com/s?k=1N5817+Diode)
 MP1583EN DC-DC buck converter | 1 | Required. 5V FIXED version highly suggested. Make sure to get version with 8 mounting holes. | ![BT_Render](images/MP1583EN.png) [Amazon](https://www.amazon.com/s?k=MP1583EN+dc-dc+5v+buck+converter)
 CJMCU-1051 | 1 | Requied if using CANBUS. CANBUS is the suggested communications method. | [Amazon](https://www.amazon.com/s?k=CJMCU-1051)
 DRV8833 DC Motor Driver | 2-4 | One required for each pair of motors. Make sure to get the 12pin 1.5A Dual H Bridge version. | [Amazon](https://www.amazon.com/s?k=DRV8833+DC+Motor+Driver+Controller+Board+3A+Dual+H+Bridge)
 Molex Micro-Fit 3.0 43045 | 2 | CANBUS socket | [Digikey](https://www.digikey.com/en/products/detail/molex/0430450414/252509)
-2.54mm 20 pin female header | 2 |  To socket Pi Pico/Pico2 | [Amazon](https://www.amazon.com/s?k=2.54mm+Female+Pin+Header)
+2.54mm 20 pin female header | 2 |  To socket Pi Pico/Pico 2 | [Amazon](https://www.amazon.com/s?k=2.54mm+Female+Pin+Header)
 2.54mm 8 pin female pin header | 1 | For CJMCU-1051.  | [Amazon](https://www.amazon.com/s?k=2.54mm+Female+Pin+Header)
 2.54mm 6 pin female pin header | 4 or more | 2 for each DRV8833 module.  | [Amazon](https://www.amazon.com/s?k=2.54mm+Female+Pin+Header)
 JST XH 2.54mm 2-pin female sockets | 4 or more | This depends on what parts of the board you will make use of. | [Amazon](https://www.amazon.com/s?k=JST-XH+2.54mm+2pin+female+sockets) 
@@ -66,7 +66,7 @@ Configure katapult as shown below.
 
 ![BT_Render](images/katapult.png) 
 
-Note if you are using a Pi Pico2 change the "Processor Model" to rp2350.
+Note if you are using a Pi Pico 2 change the "Processor Model" to rp2350.
 
 After configuring and making katapult. Connect your Pi Pico while pressing the boot button on the Pico via USB to your klipper host. It is suggested the Pico is not in the BoxTurtleMC board at this point. 
 
@@ -118,7 +118,7 @@ Reconnect to the command line on your klipper host. Next change to the klipper d
 
 ![BT_Render](images/klipper.png) 
 
-Note if you are using a Pi Pico2 change the "Processor Model" to rp2350.
+Note if you are using a Pi Pico 2 change the "Processor Model" to rp2350.
 
 Make klipper then flash it to the Pico with the command below. Substitute the uuid (XXXXXXXXXXXX) with your Pico's uuid you recorded above.
 
@@ -174,8 +174,8 @@ You will need to do this for each lane that you want the BoxTurtleMC to control 
 Use the [AFC Klipper Add-on](https://github.com/ArmoredTurtle/AFC-Klipper-Add-On/)'s "TEST lane=lane1" to check each motor control is setup properly. 
 
 ## Options
-- You can use a 2 pin
-- 
+- You can use a JST XH 2.54mm 2-pin female socket for the CANH/CANL rather than a 2 pin header if you want.
+ 
 - Only purchasing the components you need. All locations on the board do not need to be populated. You can choose and select the ones you want to populate based on your intended usage. Below is a board setup to only use motors 1-4.
 
 ![BT_Render](images/PXL_20250323_005901771.jpg)
@@ -188,7 +188,7 @@ Use the [AFC Klipper Add-on](https://github.com/ArmoredTurtle/AFC-Klipper-Add-On
 
 ![BT_Render](images/klipper-USBSERIAL.png)
 
-Note if you are using a Pi Pico2 change the "Processor Model" to rp2350.
+Note if you are using a Pi Pico 2 change the "Processor Model" to rp2350.
 
 ## Version 1.1.2 boards (Current Release)
 This is a minor upgrade over 1.1 boards. It added 2 additional switches when DRV4 is not populated and an additional 9th switch when DRV3 is also not populated. This is primarily to support using this board with MCUs that have a limited number of switch connections. To get to the required 11 switches needed for a base model, 4 lane, BoxTurtle.
