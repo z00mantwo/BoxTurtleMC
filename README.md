@@ -3,7 +3,7 @@ BoxTurtle Motor Controller. This is a self sourced DC motor controller for use w
 
 ![BT_Render](images/MC-Render.png)
 
-The main focus is combining this project with a [BigTreeTech MMB](https://biqu.equipment/products/bigtreetech-mmb). This will enable full BoxTurtle control of the DC motor powered re-spoolers. It also allows a nice upgrade path from a ERCF to the BoxTurtle. It includes additional switche ports to support the "BoxTurtle Lane Controls" mod and additional power connections to support  [Project TurtleScreen](https://github.com/sbtoonz/TurtleScreen). This board will also have the option of controlling up to 8 re-spooler motors so it should be useful in larger custom BoxTurtle setups with more than 4 lanes. 
+The main focus is combining this project with a [BigTreeTech MMB](https://biqu.equipment/products/bigtreetech-mmb). This will enable full BoxTurtle control of the DC motor powered re-spoolers. It also allows a nice upgrade path from a ERCF to the BoxTurtle. It includes additional switch ports to support the "BoxTurtle Lane Controls" mod and additional power connections to support  [Project TurtleScreen](https://github.com/sbtoonz/TurtleScreen). This board will also have the option of controlling up to 8 re-spooler motors so it should be useful in larger custom BoxTurtle setups with more than 4 lanes. 
 
 The board was developed in the free version of [KiCAD](https://www.kicad.org/). So it can be downloaded and modified.
 
@@ -14,7 +14,7 @@ Note there is a mount for the board in the stl folder.
 
 Download the latest zip file from the gerber folder. This file can then be submitted to one of the PCB manufactures online like [PCBWay.com](https://www.pcbway.com/), [HQ NextPCB](https://www.nextpcb.com/), [ALLPCB](https://www.allpcb.com/) or [JLCPcb.com](https://jlcpcb.com/). Orders are usually a minimum of 5 PCBs per order and should be around $30 USD for 5 boards including shipping. If this is your first time doing this there are often "first time customer" discounts that can push the cost below $20 including shipping. I suggest shopping around to find the best deal. 
 
-Ideally those who go through the process to make circuit boards will make their extra boards available to others at a minimum cost. The "[Garage Sale](https://discord.com/channels/1229586267671629945/1320411766290907238)" forum in the BoxTurtle Dsscord is a great place to do this. 
+Ideally those who go through the process to make circuit boards will make their extra boards available to others at a minimum cost. The "[Garage Sale](https://discord.com/channels/1229586267671629945/1320411766290907238)" forum in the BoxTurtle Discord is a great place to do this. 
 
 ## BOM
 All parts are available on Amazon with the exception of the 2 CANBUS plugs.
@@ -29,7 +29,7 @@ Raspberry Pi Pico or Pico 2 | 1 | Required. "W"ireless version is not needed, bu
 MP1583EN DC-DC buck converter | 1 | Required. 5V FIXED version highly suggested. Make sure to get version with 8 mounting holes. | ![BT_Render](images/MP1583EN.png) [Amazon](https://www.amazon.com/s?k=MP1583EN+dc-dc+5v+buck+converter)
 CJMCU-1051 | 1 | Requied if using CANBUS. CANBUS is the suggested communications method. | [Amazon](https://www.amazon.com/s?k=CJMCU-1051)
 DRV8833 DC Motor Driver | 2-4 | One required for each pair of motors. Make sure to get the 12pin 1.5A Dual H Bridge version. | [Amazon](https://www.amazon.com/s?k=DRV8833+DC+Motor+Driver+Controller+Board+3A+Dual+H+Bridge)
-Molex Micro-Fit 3.0 43045 | 2 | CANBUS socket | [Digikey](https://www.digikey.com/en/products/detail/molex/0430450414/252509)
+Molex Micro-Fit 3.0 43045 | 2 | CANBUS socket. Look at the bottom of the DigiKey page for "Mating Products" if you need the plugs. | [Digikey](https://www.digikey.com/en/products/detail/molex/0430450414/252509)
 2.54mm 20 pin female header | 2 |  To socket Pi Pico/Pico 2 | [Amazon](https://www.amazon.com/s?k=2.54mm+Female+Pin+Header)
 2.54mm 8 pin female pin header | 1 | For CJMCU-1051.  | [Amazon](https://www.amazon.com/s?k=2.54mm+Female+Pin+Header)
 2.54mm 6 pin female pin header | 4 or more | 2 for each DRV8833 module.  | [Amazon](https://www.amazon.com/s?k=2.54mm+Female+Pin+Header)
@@ -58,7 +58,7 @@ Solder in the optional CANBUS terminator resister and pin header if needed.
 
 ## CANBUS: Flashing Katapult and Klipper
 
-CANBUS needs to already setup on your printer. The [Esoterical’s guide](https://canbus.esoterical.online/) is a great resource.
+CANBUS needs to already be setup and working on your printer. [Esoterical’s guide](https://canbus.esoterical.online/) is a great resource.
 
 First step is to put Katapult on the Pi Pico. If Katapult isn't already on your Klipper host follow the instructions from the Katapult website to install it on your Klipper host. Instructions are available at [https://github.com/Arksine/katapult](https://github.com/Arksine/katapult). 
 
@@ -102,7 +102,7 @@ Rebooting device
 
 Put you Pico in the BoxTurtleMC board and connect the board to your CANBUS cable. Make sure to power everything off before doing that and then bring everything back up.
 
-Check if the Pico is detected on the CANBUS with the command:
+Check if the Pico is detected on the CANBUS with the command `~/klipper/scripts/canbus_query.py can0`. Output should look something like:
 
 ```
 ~/klipper $ ~/klippy-env/bin/python ~/klipper/scripts/canbus_query.py can0
@@ -110,7 +110,7 @@ Found canbus_uuid=05a32df28477, Application: Klipper
 Total 1 uuids found
 ```
 
-If the Pico isn't found then something went wrong in the process of flashing or something is wrong with your CANBUS cabling.
+If the Pico isn't found then something went wrong in the process of flashing or something is wrong with your CANBUS cabling or setup.
 
 Record the UUID given for the Pico. You will need this to flash klipper and to configure klipper.
 
